@@ -5,6 +5,16 @@ local ui = require "scripts.lib.ui"
 local radlib = require "scripts.lib.radlib"
 
 ---------------------------------------------------------------------------------
+-- BEGINNING OF VARIABLE DECLARATIONS
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+-- END OF VARIABLE DECLARATIONS
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
 -- BEGINNING OF YOUR IMPLEMENTATION
 ---------------------------------------------------------------------------------
 function scene:createScene( event )
@@ -18,27 +28,20 @@ function scene:enterScene( event )
 end
 
 function scene:exitScene( event )
+  -- stop timers, sound, etc.
 end
 
 function scene:destroyScene( event )
+  -- free up resources here
 end
 
 ---------------------------------------------------------------------------------
 -- END OF YOUR IMPLEMENTATION
 ---------------------------------------------------------------------------------
---
--- "createScene" event is dispatched if scene's view does not exist
+
 scene:addEventListener( "createScene", scene )
-
--- "enterScene" event is dispatched whenever scene transition has finished
 scene:addEventListener( "enterScene", scene )
-
--- "exitScene" event is dispatched before next scene's transition begins
 scene:addEventListener( "exitScene", scene )
-
--- "destroyScene" event is dispatched before view is unloaded, which can be
--- automatically unloaded in low memory situations, or explicitly via a call to
--- storyboard.purgeScene() or storyboard.removeScene().
 scene:addEventListener( "destroyScene", scene )
 ---------------------------------------------------------------------------------
 
