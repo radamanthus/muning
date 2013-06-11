@@ -2,13 +2,14 @@ settings = {
   orientation = {
     default = "portrait",
     supported = {
-      "portrait"
+      "portrait", "portraitUpsideDown", "landscapeRight", "landscapeLeft"
     },
   },
   iphone = {
     plist = {
       UIStatusBarHidden = false,
       UIApplicationExitsOnSuspend = true,
+      UIPrenderedIcon = true,
       CFBundleIconFile = "Icon.png",
       CFBundleIconFiles = {
        "Icon.png",
