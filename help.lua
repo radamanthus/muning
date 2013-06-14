@@ -23,8 +23,6 @@ end
 
 function scene:enterScene( event )
   print("Help loaded...")
-
-  storyboard.removeAll()
 end
 
 function scene:exitScene( event )

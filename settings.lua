@@ -23,8 +23,6 @@ end
 
 function scene:enterScene( event )
   print("Settings loaded...")
-
-  storyboard.removeAll()
 end
 
 function scene:exitScene( event )

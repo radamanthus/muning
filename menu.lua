@@ -83,8 +83,6 @@ end
 
 function scene:enterScene( event )
   print("Menu loaded...")
-
-  storyboard.removeAll()
 end
 
 function scene:exitScene( event )
