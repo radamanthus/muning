@@ -18,3 +18,8 @@ If you have Ruby 1.9.3 installed, my Ruby gem [nakor](http://github.com/radamant
 # Credits
 
 This code is MIT licensed, see http://developer.coronalabs.com/code/license
+
+It incorporates these Lua libraries:
+radlib (from the author) - https://github.com/radamanthus/radlib
+GGSound (Glitch Games) - https://github.com/GlitchGames/GGSound
+GGMusic (Glitch Music) - https://github.com/GlitchGames/GGMusic

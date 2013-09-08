@@ -8,6 +8,9 @@ M.geometry = geometry
 local ioExt = require "scripts.lib.io_ext"
 M.io = ioExt
 
+local networkExt = require "scripts.lib.network_ext"
+M.network = networkExt
+
 local screen = require "scripts.lib.screen"
 M.screen = screen
 
