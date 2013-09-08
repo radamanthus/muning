@@ -1,0 +1,18 @@
+This directory will contain tools for building, testing and updating muning.
+
+These are not related in any way to the output of the Corona app and can be safely removed from Corona projects.
+
+For the immediate future, the tools where will be those for updating the built-in scripts:
+
+GGMusic
+GGSound
+radlib
+
+--
+
+strategy for GGMusic, GGSound: copy as-is into scripts/lib
+strategy for radlib:
+
+git clone into a temporary folder
+copy everything into scripts/lib
+modify radlib.lua: replace {require "x"} with {require "scripts.lib.x"}
